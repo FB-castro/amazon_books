@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
 
-df_reviews = pd.read_csv('/home/castro/Desktop/projects/amazon_books/dataset/customer reviews.csv')
-df_top100_books = pd.read_csv('/home/castro/Desktop/projects/amazon_books/dataset/Top-100 Trending Books.csv')
+df_reviews = pd.read_csv(f"../dataset/customer reviews.csv")
+df_top100_books = pd.read_csv(f"../dataset/Top-100 Trending Books.csv")
 
 books = df_top100_books['book title'].unique()
 book = st.sidebar.selectbox("Books", books)

@@ -18,8 +18,8 @@ st.set_page_config(
 
 
 
-df_reviews = pd.read_csv('/home/castro/Desktop/projects/amazon_books/dataset/customer reviews.csv')
-df_top100_books = pd.read_csv('/home/castro/Desktop/projects/amazon_books/dataset/Top-100 Trending Books.csv')
+df_reviews = pd.read_csv(f"../dataset/customer reviews.csv")
+df_top100_books = pd.read_csv(f"../dataset/Top-100 Trending Books.csv")
 
 price_min = df_top100_books['book price'].min() #slider min value
 price_max = df_top100_books['book price'].max() #slider max value
