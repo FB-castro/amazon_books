@@ -1,11 +1,12 @@
 import streamlit as st
 import pandas as pd
 
-df_reviews = pd.read_csv(f"/workspaces/amazon_books/dataset/customer reviews.csv")
-df_top100_books = pd.read_csv(f"/workspaces/amazon_books/dataset/Top-100 Trending Books.csv")
+df_reviews = pd.read_csv("dataset/customer reviews.csv")
+
+df_top100_books = pd.read_csv("dataset/Top-100 Trending Books.csv")
 
 books = df_top100_books['book title'].unique()
-book = st.sidebar.selectbox("Books", books)
+book = st.sidebar.selectbox("Books", books, index=1)
 
 df_book = df_top100_books[df_top100_books['book title'] == book]
 
