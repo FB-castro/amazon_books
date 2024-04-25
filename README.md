@@ -2,6 +2,10 @@
 
 Este é um aplicativo desenvolvido com o Streamlit que exibe informações sobre os top 100 livros vendidos na Amazon, além de fornecer detalhes específicos sobre cada livro e seus respectivos reviews.
 
+[Você poderá acessar a aplicação clicando aqui](https://amazonsbooksreviews.streamlit.app/)
+
+[Fonte do dataset no Kaggle](https://www.kaggle.com/datasets/anshtanwar/top-200-trending-books-with-reviews)
+
 ## Estrutura de Diretórios
 
 ```
